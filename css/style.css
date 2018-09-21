@@ -8,3 +8,41 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+header{
+  background-color: var(--app-color);
+}
+nav{
+  display: flex;
+  flex-direction: row;
+}
+li{
+  display: inline-block;
+}
+.chat{
+  display: grid;
+  grid-template-columns: 9em 1fr 1fr;
+}
+.centro{
+  border: 2px solid;
+}
+.texto, .hora{
+  display: grid;
+  margin: 0;
+}
+figure{
+  margin: 1em;
+}
+.foto img{
+  width: 100px;
+  border-radius: 50%;
+}
+p{
+
+}
+.titulo{
+  display: flex;
+  justify-content: space-between;
+}
+/* .centro > * {
+  margin: 0;
+} */
