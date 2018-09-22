@@ -22,25 +22,40 @@ body{
 header{
   background-color: var(--app-color);
   color: white;
+  box-shadow: 0 5px 1px rgb(0, 0, 0);
 }
 nav{
   display: flex;
   flex-direction: row;
 }
+nav li.is-active {
+  box-shadow: inset 0px -3px 0px white !important;
+}
 .titulo{
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  align-items: center;
+  padding: 1em 2em;
+}
+.titulo i{
+  padding: 0.5em;
+}
+ul{
+  margin: 0;
 }
 li{
   display: inline-block;
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+.active{
+  margin-bottom: 2px solid white;
 }
 .chat{
   display: grid;
   grid-template-columns: 9em 1fr 1fr;
 }
 .chat > *{
-  justify-items: stretch;
   align-items: center;
 }
 .texto, .hora{
@@ -48,7 +63,9 @@ li{
   margin: 0;
 }
 .hora{
-  justify-items: center;
+	justify-items: flex-end;
+	color: gray;
+	padding-right: 4em;
 }
 .texto p, .hora p{
   font-size: 1.5em;
@@ -56,7 +73,6 @@ li{
 }
 .iconos{
   font-size: 2em;
-  color: gray;
 }
 figure{
   margin: 1em;
