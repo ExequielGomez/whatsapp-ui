@@ -8,12 +8,29 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+.container{
+  width: 720px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+.notif{
+  background-color: var(--notif-color);
+  color: white;
+  text-align: right;
+  height: 2em;
+}
 header{
   background-color: var(--app-color);
+  color: white;
 }
 nav{
   display: flex;
   flex-direction: row;
+}
+.titulo{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
 }
 li{
   display: inline-block;
@@ -22,27 +39,30 @@ li{
   display: grid;
   grid-template-columns: 9em 1fr 1fr;
 }
-.centro{
-  border: 2px solid;
+.chat > *{
+  justify-items: stretch;
+  align-items: center;
 }
 .texto, .hora{
   display: grid;
+  margin: 0;
+}
+.hora{
+  justify-items: center;
+}
+.texto p, .hora p{
+  font-size: 1.2em;
   margin: 0;
 }
 figure{
   margin: 1em;
 }
 .foto img{
-  width: 100px;
+  width: 5em;
   border-radius: 50%;
+  margin: auto;
+
 }
 p{
 
 }
-.titulo{
-  display: flex;
-  justify-content: space-between;
-}
-/* .centro > * {
-  margin: 0;
-} */
