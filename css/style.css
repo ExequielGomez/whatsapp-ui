@@ -51,8 +51,12 @@ li{
   justify-items: center;
 }
 .texto p, .hora p{
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 0;
+}
+.iconos{
+  font-size: 2em;
+  color: gray;
 }
 figure{
   margin: 1em;
