@@ -22,14 +22,12 @@ body{
 header{
   background-color: var(--app-color);
   color: white;
-  box-shadow: 0 5px 1px rgb(0, 0, 0);
 }
 nav{
-  display: flex;
-  flex-direction: row;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
 }
 nav li.is-active {
-  box-shadow: inset 0px -3px 0px white !important;
+  box-shadow: inset 0px -6px 0px white;
 }
 .titulo{
   display: flex;
@@ -41,7 +39,11 @@ nav li.is-active {
   padding: 0.5em;
 }
 ul{
+  display: grid;
+  grid-template-columns: 5em repeat(3, 1fr);
   margin: 0;
+  padding: 0;
+  text-align: center;
 }
 li{
   display: inline-block;
