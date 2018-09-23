@@ -4,6 +4,7 @@
   --chat-color:#FAFAFA;
   --icon-color:#83AFAA;
   --text-color:#737373;
+  --boton-color:#20C659;
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -85,6 +86,20 @@ figure{
   margin: auto;
 
 }
-p{
-
+.boton-fijo{
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  background-color: var(--boton-color);
+  position: fixed;
+  right: calc((100vw/2) - 20em);
+  bottom: 2em;
+}
+.boton-fijo i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 80px;
+  color: white;
 }
